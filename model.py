@@ -8,10 +8,10 @@ def restore_model_ckpt(user_id, dataset, epoch, max_len, item_len):
     sess = tf.Session()
 
     # load model structure
-    saver = tf.train.import_meta_graph('./' + dataset + '_model_' + epoch + '/' + dataset + '_model.meta')  
+    saver = tf.train.import_meta_graph('./model_sample/' + dataset + '_model.meta')  
 
      # restore model variables
-    saver.restore(sess, tf.train.latest_checkpoint('./'+ dataset + '_model_' + epoch)) 
+    saver.restore(sess, tf.train.latest_checkpoint('./model_sample')) 
     
     # get placeholder variable
     is_training = sess.graph.get_tensor_by_name('Placeholder:0')

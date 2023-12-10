@@ -1,12 +1,7 @@
 # SSE-PT-Deployment
 Demo for deploying SSE-PT(SSE-PT: Temporal Collaborative Ranking Via Personalized Transformer) https://github.com/wuliwei9278/SSE-PT/tree/master
 
-1. install dependencies
-streamlit==1.23.1
-tensorflow==1.14.0
-tensorflow-estimator==1.14.0
-pandas==1.0.3
-numpy==1.18.1
+1. install dependencies from `rquirements`
 
 2. download MovieLens 1M dataset, and put `movies.dat` and `users.dat` into the same folder of model.py
 
